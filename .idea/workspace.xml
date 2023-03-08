@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f93ef8dc-d054-427b-9fb6-bb227fa9dae1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/finn/start/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/finn/start/LambdaAble.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/finn/start/ListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/finn/start/RomaNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/finn/start/Sudoku.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/finn/start/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TestReA8A103.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/finn/start/TestReA8A103.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,11 +21,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2JzBzv3EpamH9zIJzIHGBZ7ShjK" />
@@ -27,8 +40,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dyhtl2" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="Console" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -42,16 +56,59 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+  <component name="RunManager" selected="Application.ListNode">
+    <configuration name="ListNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.finn.start.ListNode" />
       <module name="Finn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.finn.start.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.finn.start.Main" />
+      <module name="Finn" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RomaNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.finn.start.RomaNumber" />
+      <module name="Finn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.finn.start.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestReA8A103" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.finn.start.TestReA8A103" />
+      <module name="Finn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.finn.start.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ListNode" />
+        <item itemvalue="Application.TestReA8A103" />
+        <item itemvalue="Application.RomaNumber" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -68,7 +125,21 @@
       <updated>1673071296765</updated>
       <workItem from="1673071301712" duration="1379000" />
       <workItem from="1673076583881" duration="365000" />
-      <workItem from="1673077261612" duration="3866000" />
+      <workItem from="1673077261612" duration="5623000" />
+      <workItem from="1673233204471" duration="6037000" />
+      <workItem from="1673488971825" duration="2815000" />
+      <workItem from="1673858713596" duration="1894000" />
+      <workItem from="1675044192594" duration="2899000" />
+      <workItem from="1675261450730" duration="655000" />
+      <workItem from="1675302673680" duration="694000" />
+      <workItem from="1675925711841" duration="8745000" />
+      <workItem from="1675993048472" duration="4582000" />
+      <workItem from="1676164540231" duration="3650000" />
+      <workItem from="1676337124474" duration="7728000" />
+      <workItem from="1677029394830" duration="9956000" />
+      <workItem from="1677225461366" duration="3788000" />
+      <workItem from="1677294463764" duration="1487000" />
+      <workItem from="1678258694513" duration="608000" />
     </task>
     <task id="LOCAL-00001" summary="TestReA8A103 代码添加  依赖注入 2023年1月7日16:04:24  yangyunzhen">
       <created>1673078675429</created>
@@ -77,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673078675429</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="test hello world! 11 yangyunzhen">
+      <created>1673081185453</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673081185453</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,6 +176,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="TestReA8A103 代码添加  依赖注入 2023年1月7日16:04:24  yangyunzhen" />
-    <option name="LAST_COMMIT_MESSAGE" value="TestReA8A103 代码添加  依赖注入 2023年1月7日16:04:24  yangyunzhen" />
+    <MESSAGE value="test hello world! 11 yangyunzhen" />
+    <option name="LAST_COMMIT_MESSAGE" value="test hello world! 11 yangyunzhen" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="roma.charAt(i)" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

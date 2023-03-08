@@ -1,3 +1,4 @@
+package com.finn.start;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
@@ -102,7 +103,7 @@ public class TestReA8A103 {
 
     @Override
     public String toString() {
-        return "TestReA8A103 [nameString=" + nameString + ", salary=" + salary + ", age=" + age + ", ElNino=" + ElNino + ", startTime=" + startTime
+        return "com.finn.start.TestReA8A103 [nameString=" + nameString + ", salary=" + salary + ", age=" + age + ", ElNino=" + ElNino + ", startTime=" + startTime
                 + "]";
     }
 
@@ -118,27 +119,99 @@ public class TestReA8A103 {
      */
     public static void main(String[] args) throws Exception {
 
+//        replaceFunc();
 
-//        System.out.println(1 % 2);
-//
-//        String s = null;
-//        System.out.println(s != null ? s : "" + "ss");
+//        System.out.println(isValid(" {} {{{}}} ({}) (){{{}}}"));
 
-//        System.out.println(LocalDateTime.now());
-//
-//        String desc = "SSS100";
-//        System.out.println(NumberUtils.isCreatable(desc.substring(desc.length() - 3, desc.length() )));
-//        Float strNum = Float.parseFloat(desc.substring(desc.length() - 3, desc.length() ));
-//        System.out.println(strNum);
+        getSerialNo("C13C4WBR3052321200735,B,TRUE$,,0;$,;$@C13C4WAR4012321100494,TRUE;");
 
-//        String ou = "200-180";
-//        System.out.println(ou.indexOf("-"));
-//        System.out.println(ou.substring(0,3));
-//        System.out.println(ou.substring(3,ou.length()));
-//        readExcel();
+//        useEatable((x,y) -> {
+//            System.out.println(x+y);
+//            return x+y;
+//        });
+    }
 
-        //
-        ThreadAsyn();
+
+    private static void useEatable(LambdaAble lambdaAble) {
+//        lambdaAble.eat();
+        lambdaAble.add(1, 2);
+//        lambdaAble.fly("");
+
+    }
+
+    /**
+     * 巧妙的解决方式
+     *
+     * @param s
+     * @return
+     */
+    public static boolean isValid(String s) {
+        int length = s.length() / 2;
+        for (int i = 0; i < length; i++) {
+            s = s.replace("()", "").replace("{}", "").replace("[]", "");
+        }
+
+        return s.trim().length() == 0;
+    }
+
+    //C13C2WAR2022311400376,A,FALSE$,,0;,,0;$100006299,0.000;100000321,0.000;$@C13C2WBR2012311500506,B,FALSE$$$@
+    public static String getSerialNo(String V_SERIALSLIST) {
+        final String C_FLAG0 = "@";
+        final String C_FLAG1 = "$";
+        final String C_FLAG2 = ",";
+        final String C_FLAG3 = ";";
+
+
+        String V_SERIALINFO;
+        String V_SINGLESERIAL;
+        String V_PARTINFO;
+        String V_MATINFO;
+        String V_SERILANO;
+        String V_PRODUCTTYPE;
+        String V_PASSFLAG;
+        String V_SERIALNOSLIST;
+        System.out.println("V_SERIALSLIST::" + V_SERIALSLIST);
+
+        V_SINGLESERIAL = V_SERIALSLIST.substring(0, V_SERIALSLIST.indexOf(C_FLAG0));
+
+        V_SERIALSLIST = V_SERIALSLIST.substring(V_SERIALSLIST.indexOf(C_FLAG0) + 1);
+
+        V_SERIALINFO = V_SINGLESERIAL.substring(0, V_SINGLESERIAL.indexOf(C_FLAG1));
+
+        V_SINGLESERIAL = V_SINGLESERIAL.substring(V_SINGLESERIAL.indexOf(C_FLAG1) + 1);
+
+        V_PARTINFO = V_SINGLESERIAL.substring(1, V_SINGLESERIAL.indexOf(C_FLAG1));
+        System.out.println("V_PARTINFO:" + V_PARTINFO);
+        //零部件信息
+
+        V_SINGLESERIAL = V_SINGLESERIAL.substring(V_SINGLESERIAL.indexOf(C_FLAG1) + 1);
+
+
+        V_MATINFO = V_SINGLESERIAL.substring(0, V_SINGLESERIAL.indexOf(C_FLAG1));
+        System.out.println("V_MATINFO:" + V_MATINFO);
+        V_SINGLESERIAL = V_SINGLESERIAL.trim();
+
+        //------------------------
+
+
+        V_SERILANO = V_SERIALINFO.substring(0, V_SERIALINFO.indexOf(C_FLAG2));
+
+        V_SERIALINFO = V_SERIALINFO.substring(V_SERIALINFO.indexOf(C_FLAG2) + 1);
+
+        V_PRODUCTTYPE = V_SERIALINFO.substring(0, V_SERIALINFO.indexOf(C_FLAG2));
+
+        System.out.println("V_PRODUCTTYPE:" + V_PRODUCTTYPE);
+        V_SERIALINFO = V_SERIALINFO.substring(V_SERIALINFO.indexOf(C_FLAG2) + 1);
+
+        V_PASSFLAG = V_SERIALINFO;
+        V_SINGLESERIAL = V_SINGLESERIAL.trim();
+        System.out.println("V_SINGLESERIAL:" + V_SINGLESERIAL);
+
+        V_SERIALNOSLIST = V_SERIALSLIST + V_SERILANO + C_FLAG2 + V_PASSFLAG + C_FLAG3;
+
+        System.out.println("V_SERIALNOSLIST:" + V_SERIALNOSLIST);
+
+        return V_SERIALNOSLIST;
     }
 
     /**
@@ -242,6 +315,31 @@ public class TestReA8A103 {
         return newStr.toString();
     }
 
+    public static String replaceFunc() {
+
+        String str1 = "ABC ABC abc abc 123 123";
+        //只会替换第一个符合的字符
+        System.out.println(str1.replaceFirst("B", "*"));
+        //会替换素有符合的字符
+        System.out.println(str1.replace("B", "*"));
+        /**
+         * 根据正则表达式进行替换
+         * \w 匹配字母或数字或下划线或汉字 等价于 '[^A-Za-z0-9_]'
+         * \s 匹配任意的空白符
+         * \d 匹配数字
+         * \b 匹配单词的开始和结束
+         * ^ 匹配字符串的开始
+         * $ 匹配字符串的结束
+         */
+        System.out.println(str1.replaceAll("\\w", "*"));
+        System.out.println(str1.replaceAll("\\s", "*"));
+        System.out.println(str1.replaceAll("\\d", "*"));
+        System.out.println(str1.replaceAll("\\b", "*"));
+        System.out.println(str1.replaceAll("^", "*"));
+        System.out.println(str1.replaceAll("$", "*"));
+        return "";
+    }
+
     public static void MathFunc() {
 
         //Math.ceil/Math.floor向上取整，向下取整
@@ -305,7 +403,7 @@ public class TestReA8A103 {
         BufferedWriter bufferedWriter = new BufferedWriter(
                 new FileWriter("C:/Users/LENOVO/Desktop/兮易 开发/buildTextFile/bufferedWriter.text"));
 
-        bufferedWriter.write("测试文件");// 将字符文本写入到对应的创建的文件中
+        bufferedWriter.write("文本内容-----");// 将字符文本写入到对应的创建的文件中
         bufferedWriter.close();// 书写完毕记得关闭输出流。
         System.out.println("已写入文件");
 
@@ -822,7 +920,7 @@ public class TestReA8A103 {
     //根据某一属性进行删选的  java8 新特性。
 //    roleNameList=list.stream().map(AutRoleInfoVo::getRoleName).collect(Collectors.toList());
 
-    //获取list 中某个属性最小的元素 (元素不得为null)
+    //获取list 中某个属性最小的元素(对象) (元素不得为null)
 //    List.stream().min(Comparator.comparing(Entity::getAge)).get();
 
 
@@ -868,6 +966,9 @@ public class TestReA8A103 {
         String str = sdf.format(date);
     }
 
+    public static void UseQueue() {
+    }
+
     //对记录进行时间排序的方法eventData(List<Event> eventList)
     public static List<TestReA8A103> eventData(List<TestReA8A103> eventList) {
         Collections.sort(eventList, (e1, e2) -> {
@@ -884,6 +985,7 @@ public class TestReA8A103 {
     }
 
     //MYSQL 的使用  去除字段为空的数据 test_id is null || (LENGTH(TRIM(test_id)) = 0)
+    //ORCALE 的使用  去除null 和字段为空的数据   ID is not  null or (length(trim(ID))>0);
     //保留为空的   test_id is not null && (LENGTH(TRIM(test_id)) > 0)
 
 
