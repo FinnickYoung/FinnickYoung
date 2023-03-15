@@ -2,8 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f93ef8dc-d054-427b-9fb6-bb227fa9dae1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/Finn.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/finn/start/Employee.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/finn/start/LambdaAble.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/finn/start/ListNode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/finn/start/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/finn/start/RomaNumber.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/finn/start/Solution.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/finn/start/Sudoku.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/finn/start/TestReA8A103$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/finn/start/TestReA8A103$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/finn/start/TestReA8A103$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/finn/start/TestReA8A103$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/finn/start/TestReA8A103$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/finn/start/TestReA8A103$6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/finn/start/TestReA8A103.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
